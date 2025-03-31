@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte a través del tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Arte a través del tiempo</h1>
+        <p>Explora las diferentes etapas del arte, descubre curiosidades y aprende más sobre la historia del arte.</p>
+    </header>
+    
+    <section id="timeline">
+        <div class="period" id="renacimiento" onclick="mostrarCuriosidades('renacimiento')">
+            <h2>Renacimiento</h2>
+            <img src="https://example.com/renacimiento.jpg" alt="Arte Renacimiento">
+        </div>
+        <div class="period" id="barroco" onclick="mostrarCuriosidades('barroco')">
+            <h2>Barroco</h2>
+            <img src="https://example.com/barroco.jpg" alt="Arte Barroco">
+        </div>
+        <div class="period" id="impresionismo" onclick="mostrarCuriosidades('impresionismo')">
+            <h2>Impresionismo</h2>
+            <img src="https://example.com/impresionismo.jpg" alt="Arte Impresionismo">
+        </div>
+    </section>
+    
+    <section id="curiosidad">
+        <button onclick="cerrarCuriosidad()">Cerrar</button>
+        <div id="curiosidadTexto"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
